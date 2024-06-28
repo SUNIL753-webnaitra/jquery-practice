@@ -1,0 +1,106 @@
+@media screen and (max-width:991px){
+    .header{
+        position: relative;
+        z-index: 999;
+    }
+    .nav-bar{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(139, 108, 168);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+    }
+
+
+    .top-menu .nav-bar{
+        transform: translateY(0%);
+        transition: 0.5s;
+        opacity: 1;
+        visibility: visible
+        ;
+        pointer-events: auto;
+
+    }
+    .top-menu .menu-icon[name="close-outline"]{
+       display: block;
+
+    }
+    .top-menu .menu-icon[name="menu-outline"]{
+        display: none;
+ 
+     }
+
+
+    .nav-list{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 2rem;
+        height: 50vh;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .logo{
+        width: 100px;
+    }
+
+.box p{
+    padding-inline:2rem;
+
+}
+.container{
+    max-width: 991px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .row{
+    width: 100%;
+    display: block;
+  }
+  .row .heading{
+    width: 100%;
+    margin-top: 2rem;
+    
+   
+  }
+  .row .img-box {
+    width: 100%;
+    margin-block: 3rem;
+    text-align: center;
+}
+  .img-box{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .img-box img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .blog-box{
+    display:block;
+    
+}
+.blog-boxs{
+    width:100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.product-boxs{
+    display: block;
+
+}
+.product-box1{
+    width: 100%;
+}
+}
